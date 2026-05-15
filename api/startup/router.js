@@ -1,7 +1,7 @@
 const express = require('express');
-const produtoController = require('../controllers/produtoController');
+const produtoRouter = require('../src/routes/ProdutoRouter');
 
 module.exports = (app) => {
     app.use(express.json());
-    app.use('/produtos', produtoController);
+    app.use('/produto', produtoRouter);
 };
